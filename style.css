@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.container {
+    border: 1px solid black;
+    width: 624px;
+    height: 624px;
+}
