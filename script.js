@@ -9,7 +9,7 @@ function clearGrid() {
 function createGrid(size = 16) {
     if (container.hasChildNodes()) clearGrid();
 
-    const squareSide = Math.floor((container.clientWidth - size) / size);
+    const squareSide = (container.clientWidth - size) / size;
     
     let element;
 
