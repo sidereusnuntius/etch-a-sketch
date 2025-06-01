@@ -11,6 +11,7 @@ body {
 
 .container {
     border: 1px solid black;
+    padding: 1px;
     width: 624px;
     height: 624px;
     display: flex;

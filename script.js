@@ -18,4 +18,10 @@ function createGrid(size = 16) {
     }
 }
 
+function mouseOver(event) {
+    if (event.target === container) return;
+    event.target.style.backgroundColor = "black";
+}
+
 createGrid();
+container.addEventListener("mouseover", mouseOver)
