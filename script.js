@@ -9,21 +9,30 @@ function clearGrid() {
 function createGrid(size = 16) {
     if (container.hasChildNodes()) clearGrid();
 
-    const squareSide = Math.floor(container.clientWidth / size);
-    const maxWidth = Math.floor(container.clientWidth / (size-1));
+    const squareSide = Math.floor((container.clientWidth - size) / size);
+    
     let element;
 
     for (let i = 0; i < size*size; i++) {
         element= document.createElement("div");
         element.classList.add("square");
+        element.classList.add("untouched");
         element.setAttribute("style", `width: ${squareSide}px;`);
         container.appendChild(element);
     }
 }
 
 function mouseOver(event) {
-    if (event.target === container) return;
-    event.target.style.backgroundColor = "black";
+    const target = event.target;
+    if (target === container) return;
+
+    
+    if (target.classList.contains("untouched")) {
+        target.classList.remove("untouched");
+        target.style.opacity = 0.1;
+    } else if (target.style.opacity < 1) target.style.opacity = Number(target.style.opacity) + 0.1;
+    
+    target.style.backgroundColor = "black";
 }
 
 function resizeGrid() {

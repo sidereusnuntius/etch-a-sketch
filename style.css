@@ -14,15 +14,17 @@ body {
     border: 2px solid #243119;
     border-radius: 4px;
     /* padding: 1px; */
-    width: 624px;
-    height: 624px;
+    width: 648px;
+    height: 648px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #B7DCB5;
+    gap: 1px;
 }
 
 .square {
     box-sizing: border-box;
-    border: 1px solid #B7DCB5;
+    background-color: #cff1cb;
     flex: auto;
     /* height: stretch; */
 }
