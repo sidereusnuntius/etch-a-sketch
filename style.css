@@ -13,4 +13,11 @@ body {
     border: 1px solid black;
     width: 624px;
     height: 624px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    box-sizing: border-box;
+    border: 1px solid #d3d2d2;
 }
