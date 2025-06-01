@@ -11,7 +11,7 @@ body {
 
 .container {
     border: 1px solid black;
-    padding: 1px;
+    /* padding: 1px; */
     width: 624px;
     height: 624px;
     display: flex;
@@ -21,4 +21,6 @@ body {
 .square {
     box-sizing: border-box;
     border: 1px solid #d3d2d2;
+    flex: auto;
+    /* height: stretch; */
 }
